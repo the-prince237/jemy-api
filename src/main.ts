@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
+  const app = await NestFactory.create(AppModule, { cors: 'https://jemy-fashion.vercel.app' });
   app.enableCors({
     origin: 'https://jemy-fashion.vercel.app',
   });
